@@ -73,6 +73,7 @@ const addLayerToMap = () => {
       url: BASIC_URL, // wms服务的url地址
       blend: false, // 地图级别切换时，不同级别的图片是否进行混合
       tileSize: 512, // 加载WMS图层服务时，图片的分片大小
+      zIndex: 0,
       params: {
         LAYERS: layer,
         VERSION: '1.1.0',
